@@ -1,0 +1,154 @@
+.buttons {
+    display: flex;
+}
+
+.buttons__anchor {
+    padding: 1em 2.2em;
+    font-weight: 700;
+    color: var(--white);
+    text-decoration: none;
+    background-color: var(--orange);
+}
+
+.buttons__item {
+    margin: 0 1em;
+}
+
+.card {
+    margin: 1em;
+    padding: 1em;
+    background: var(--white);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.card__buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card__description {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
+}
+
+.card__description-stars {
+    padding-bottom: 1em;
+}
+
+.carousel__title {
+    padding: 1em 0 0.5em 0;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    color: var(--orange);
+    text-transform: uppercase;
+    background-color: var(--white);
+}
+
+.description__img {
+    padding-bottom: 1em;
+    padding-left: 1em;
+}
+
+.description__text {
+    font-size: 14px;
+}
+
+.description__title {
+    font-weight: 700;
+    color: var(--orange);
+}
+
+.description__title-book {
+    margin: 1em 0;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--darken-blue);
+}
+
+.swiper-button-prev, 
+.swiper-button-next {
+    display: none;
+}
+
+.swiper-pagination {
+    position: initial;
+    margin: 0.5em 0;
+}
+
+.swiper-slide img{
+    width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+
+    .buttons__anchor:active {
+        background-color: var(--darken-blue);
+    }
+
+    .card {
+        margin: 3em auto;
+        width: 50%;
+    }
+
+    .carousel__title {
+        padding: 2em 0 1em 0;
+        font-size: 26px;
+    }
+
+    .swiper {
+        width: 70%;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next
+    {
+        top: 60%;
+        display: block;
+        color: var(--blue-gradient);
+    }
+
+    .swiper-pagination {
+        margin: 2em 0 3em 0;
+    }
+
+    .swiper-slides {
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+
+    .card {
+        margin-left: 6em;
+        width: 40%;
+    }
+
+    .carousel__container {
+        display: flex;
+        align-items: center;
+        padding: 2em 10em 6em 10em;
+    } 
+
+    .swiper {
+        width: 55%;
+    }
+
+    .swiper-pagination {
+        margin: 1em 0;
+    }
+
+    .description {
+        margin-right: 6em;
+    }
+
+    .description__text {
+        font-size: 16px;
+    }
+
+    .description__title {
+        font-size: 32px;
+    }
+}
